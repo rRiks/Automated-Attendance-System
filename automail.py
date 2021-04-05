@@ -16,7 +16,8 @@ user_mail = "riks.rs18@gmail.com"
 user_password = "Google001"
 yag = yagmail.SMTP(user=user_mail, password=user_password)
 #yag = yagmail.SMTP("riks.rs18@gmail.com", oauth2_file="~/oauth2_creds.json")
-#recipients = ['tafiquemd@gmail.com','sanskruti324@gmail.com','manisha.maharana1998@gmail.com']
-recipients = input("Enter recivier's mail id: ").split(",")
+# recipients = ['tafiquemd@gmail.com','sanskruti324@gmail.com']
+recipients = ['tafiquemd@gmail.com']
+#recipients = input("Enter recivier's mail id: ").split(",")
 yag.send(to=recipients,subject=sub,attachments= filename)
 print("Email Sent!")

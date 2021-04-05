@@ -1,7 +1,6 @@
 import datetime
 import os
 import time
-
 import cv2
 import pandas as pd
 
